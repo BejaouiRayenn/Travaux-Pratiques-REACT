@@ -1,16 +1,13 @@
 
-import Rouge from "./components/Rouge/Rouge";
-import Bleu from "./components/Bleu/Bleu";
-import Vert from "./components/Vert/vert";
-import "./App.css";
-
+import Header from "./components/Header/Header"
+import Footer from "./components/Footer/Footer"
+import"./App.css"
 function App() {
   return (
-    <>
-      <Rouge />
-      <Bleu />
-      <Vert />
-    </>
+    <div className="app">
+    <Header/>
+    <Footer/>
+    </div>
   );
 }
 

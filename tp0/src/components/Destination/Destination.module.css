@@ -1,0 +1,48 @@
+
+.destination {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+
+    padding-bottom: 20px;
+
+    transition: transform 0.3s,
+                box-shadow 0.3s;
+}
+
+.destination:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.titre {
+    color: #173D55;
+    margin: 18px 15px 8px;
+    font-size: 22px;
+}
+
+.pays {
+    color: #0FB9B1;
+    font-weight: bold;
+    margin: 0 15px 10px;
+}
+
+.description {
+    margin: 10px 15px;
+    line-height: 1.6;
+}
+
+.prix {
+    color: #F49F20;
+    margin: 15px;
+    font-size: 22px;
+}
