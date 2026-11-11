@@ -1,0 +1,19 @@
+.container {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f4f7fa;
+}
+
+.title {
+  color: #123c69;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.destinations {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 25px;
+}
