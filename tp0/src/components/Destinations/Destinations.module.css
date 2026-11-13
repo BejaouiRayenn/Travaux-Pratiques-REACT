@@ -1,19 +1,41 @@
 .container {
-  padding: 40px 20px;
-  text-align: center;
-  background-color: #f4f7fa;
+  padding: 55px 7%;
+  background: linear-gradient(180deg, #f0f7ff 0%, #ffffff 100%);
+  min-height: 100vh;
 }
 
 .title {
-  color: #123c69;
-  font-size: 30px;
-  margin-bottom: 30px;
+  text-align: center;
+  color: #123968;
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 40px;
 }
 
 .destinations {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  flex-wrap: wrap;
-  gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+  max-width: 1250px;
+  margin: auto;
+}
+
+@media (max-width: 950px) {
+  .destinations {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 35px 5%;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .destinations {
+    grid-template-columns: 1fr;
+  }
 }

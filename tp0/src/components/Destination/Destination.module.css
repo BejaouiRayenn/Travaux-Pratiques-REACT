@@ -1,48 +1,53 @@
 
+
+
 .destination {
-    background-color: white;
-    border-radius: 12px;
-    overflow: hidden;
-
-    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
-
-    padding-bottom: 20px;
-
-    transition: transform 0.3s,
-                box-shadow 0.3s;
-}
-
-.destination:hover {
-    transform: translateY(-7px);
-
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
 }
 
 .image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
 }
 
 .titre {
-    color: #173D55;
-    margin: 18px 15px 8px;
-    font-size: 22px;
+  font-size: 24px;
+  color: #123968;
+  margin: 15px;
 }
 
-.pays {
-    color: #0FB9B1;
-    font-weight: bold;
-    margin: 0 15px 10px;
+.pays,
+.prix {
+  margin: 10px 15px;
 }
 
 .description {
-    margin: 10px 15px;
-    line-height: 1.6;
+  padding: 0 15px;
 }
 
-.prix {
-    color: #F49F20;
-    margin: 15px;
-    font-size: 22px;
+.favori:hover {
+  background-color: #ffe8e8;
+}
+
+.favoriActif {
+  background-color: #ffe1e1;
+  color: #d62828;
+}
+.destination {
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.destination:hover {
+    transform: translateY(-15px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }

@@ -1,89 +1,159 @@
 .header {
-
     background-color: #173D55;
-
     color: white;
-
     padding: 22px 8%;
 
-
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
 }
-
-
 
 .header h1 {
-
     font-size: 26px;
-
     margin: 0;
-
 }
-
-
 
 .nav {
-
     display: flex;
-
     gap: 30px;
-
 }
-
-
 
 .nav a {
-
     color: white;
-
     text-decoration: none;
-
     font-weight: bold;
-
     transition: color 0.3s;
-
 }
-
-
 
 .nav a:hover {
-
     color: #F49F20;
-
 }
 
-
-
-/* Responsive */
-
-
+/* Responsive 
 
 @media (max-width: 768px) {
-
     .header {
-
         flex-direction: column;
-
         gap: 20px;
-
     }
-
-
 
     .nav {
-
         gap: 15px;
-
         flex-wrap: wrap;
-
         justify-content: center;
-
     }
+} 
+*/
 
+.header {
+  width: 100%;
+  min-height: 90px;
+  padding: 15px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 15px rgba(18, 57, 104, 0.08);
+  position: relative;
+  z-index: 10;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #123968;
+  font-size: 27px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.logo strong {
+  color: #f49f20;
+}
+
+.logoIcon {
+  color: #0875c9;
+  font-size: 38px;
+  transform: rotate(-10deg);
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #18334f;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 17px;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.nav a:hover {
+  color: #0875c9;
+  background-color: #edf5ff;
+}
+
+.nav .active {
+  background-color: #0868b9;
+  color: white;
+}
+
+/* Bouton réservation */
+.reserve {
+  text-decoration: none;
+  color: white;
+  background-color: #f49f20;
+  padding: 14px 22px;
+  border-radius: 30px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: 0.3s ease;
+}
+
+.reserve:hover {
+  background-color: #e48708;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 550px) {
+  .logo {
+    font-size: 23px;
+  }
+
+  .nav {
+    gap: 3px;
+  }
+
+  .nav a {
+    padding: 9px;
+    font-size: 13px;
+  }
+
+  .reserve {
+    font-size: 13px;
+  }
 }
