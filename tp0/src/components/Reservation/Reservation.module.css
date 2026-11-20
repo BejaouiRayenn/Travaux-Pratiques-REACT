@@ -1,0 +1,236 @@
+.container {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 35px 40px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.container h2 {
+  text-align: center;
+  color: #173b57;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* Formulaire */
+.container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Chaque champ */
+.container form > div {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+}
+
+/* Labels alignés à gauche */
+.container label {
+  display: block;
+  width: 100%;
+  text-align: left;
+  color: #263746;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* Champs de saisie */
+.container input,
+.container select,
+.container textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #d5dee5;
+  border-radius: 8px;
+  background-color: #f9fbfc;
+  color: #263746;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.container input:focus,
+.container select:focus,
+.container textarea:focus {
+  border-color: #0fb9b1;
+  box-shadow: 0 0 0 3px rgba(15, 185, 177, 0.12);
+  background-color: #ffffff;
+}
+
+.container textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Groupe des boutons radio */
+.radioGroup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  align-items: center;
+}
+
+.radioGroup label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: auto;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.radioGroup input {
+  width: auto;
+  accent-color: #0fb9b1;
+}
+
+/* Erreurs */
+.inputError {
+  border: 1px solid #dc3545 !important;
+  background-color: #fff8f8 !important;
+}
+
+.errorMessage {
+  color: #dc3545;
+  font-size: 13px;
+  text-align: left;
+  margin-top: 2px;
+}
+
+/* Boutons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.buttons button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.submitButton {
+  background-color: #0fb9b1;
+  color: white;
+}
+
+.submitButton:hover {
+  background-color: #0b9992;
+  transform: translateY(-2px);
+}
+
+.resetButton {
+  background-color: #e8edf1;
+  color: #34495e;
+}
+
+.resetButton:hover {
+  background-color: #d5dee5;
+}
+
+/* Récapitulatif */
+.recap {
+  margin-top: 30px;
+  padding: 22px;
+  background-color: #f0faf9;
+  border-left: 5px solid #0fb9b1;
+  border-radius: 8px;
+}
+
+.recap h3 {
+  color: #173b57;
+  margin-bottom: 15px;
+}
+
+.recap p {
+  margin: 8px 0;
+  color: #34495e;
+}
+
+/* Popup */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 35, 50, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 15px;
+}
+
+.popup {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+  animation: apparition 0.3s ease;
+}
+
+.popup h3 {
+  color: #0b9992;
+  margin-bottom: 15px;
+}
+
+.popup p {
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.popup button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 7px;
+  background-color: #0fb9b1;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Adaptation mobile */
+@media (max-width: 600px) {
+  .container {
+    margin: 15px;
+    padding: 22px 18px;
+  }
+
+  .container h2 {
+    font-size: 23px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+}
