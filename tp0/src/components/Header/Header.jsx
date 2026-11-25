@@ -1,5 +1,6 @@
 
 
+import { NavLink } from "react-router-dom";
 import Style from "./Header.module.css";
 
 function Header() {
@@ -8,9 +9,41 @@ function Header() {
             <h1>Travel Agency</h1>
 
             <nav className={Style.nav}>
-                <a href="#">Accueil</a>
-                <a href="#">Destination</a>
-                <a href="#">Contacts</a>
+                <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                        isActive ? Style.active : ""
+                    }
+                >
+                    Accueil
+                </NavLink>
+
+                <NavLink
+                    to="/destinations"
+                    className={({ isActive }) =>
+                        isActive ? Style.active : ""
+                    }
+                >
+                    Destinations
+                </NavLink>
+
+                <NavLink
+                    to="/reservation"
+                    className={({ isActive }) =>
+                        isActive ? Style.active : ""
+                    }
+                >
+                    Réservation
+                </NavLink>
+
+                <NavLink
+                    to="/login"
+                    className={({ isActive }) =>
+                        isActive ? Style.active : ""
+                    }
+                >
+                    Login
+                </NavLink>
             </nav>
         </header>
     );

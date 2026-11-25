@@ -1,0 +1,193 @@
+.apropos {
+    width: 100%;
+    color: #333;
+}
+
+/* BANNIERE */
+
+.banner {
+    background: linear-gradient(
+        rgba(20, 40, 60, 0.75),
+        rgba(20, 40, 60, 0.75)
+    ),
+    url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e");
+
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+    padding: 75px 20px;
+    color: white;
+}
+
+.banner h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 18px;
+}
+
+/* PRESENTATION */
+
+.presentation {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 70px 10%;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.texte {
+    flex: 1;
+}
+
+.sousTitre {
+    color: #e5a900;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.texte h2 {
+    color: #243b55;
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.texte p {
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 22px;
+    background: #ffc107;
+    color: #222;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e0a800;
+    transform: translateY(-3px);
+}
+
+/* VALEURS */
+
+.valeurs {
+    background: #f7f8fa;
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.valeurs h2 {
+    color: #243b55;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.cartes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.carte {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 220px;
+    max-width: 300px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.carte:hover {
+    transform: translateY(-8px);
+}
+
+.carte span {
+    font-size: 40px;
+}
+
+.carte h3 {
+    color: #243b55;
+    margin: 15px 0;
+}
+
+.carte p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* STATISTIQUES */
+
+.statistiques {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 50px 8%;
+    background: #243b55;
+    color: white;
+    text-align: center;
+}
+
+.statistiques div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.statistiques strong {
+    font-size: 32px;
+    color: #ffc107;
+}
+
+.statistiques span {
+    font-size: 15px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+
+    .presentation {
+        flex-direction: column;
+        padding: 40px 7%;
+    }
+
+    .image img {
+        height: 250px;
+    }
+
+    .texte h2 {
+        font-size: 25px;
+    }
+
+    .banner h1 {
+        font-size: 32px;
+    }
+
+    .statistiques {
+        gap: 35px;
+    }
+}

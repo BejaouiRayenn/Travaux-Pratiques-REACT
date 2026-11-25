@@ -1,0 +1,154 @@
+Accueil.module.css
+100 %
+.accueil {
+    width: 100%;
+}
+
+/* SECTION PRINCIPALE */
+
+.hero {
+    min-height: 520px;
+    position: relative;
+
+    background-image: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px 10%;
+}
+
+/* Voile sombre sur l'image */
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.48);
+}
+
+/* CONTENU */
+
+.contenu {
+    position: relative;
+    z-index: 1;
+    max-width: 650px;
+    color: white;
+}
+
+.sousTitre {
+    color: #ffc107;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.contenu h1 {
+    font-size: 52px;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+.contenu h1 span {
+    color: #ffc107;
+}
+
+.contenu p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* BOUTONS */
+
+.actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btnPrincipal,
+.btnSecondaire {
+    text-decoration: none;
+    padding: 14px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btnPrincipal {
+    background: #ffc107;
+    color: #222;
+}
+
+.btnPrincipal:hover {
+    background: #e0a800;
+    transform: translateY(-3px);
+}
+
+.btnSecondaire {
+    border: 2px solid white;
+    color: white;
+}
+
+.btnSecondaire:hover {
+    background: white;
+    color: #222;
+}
+
+/* SECTION AVANTAGES */
+
+.avantages {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 55px 8%;
+    background: #f7f8fa;
+    flex-wrap: wrap;
+}
+
+.avantage {
+    flex: 1;
+    min-width: 220px;
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+}
+
+.avantage span {
+    font-size: 38px;
+}
+
+.avantage h3 {
+    color: #243b55;
+    margin: 15px 0 10px;
+}
+
+.avantage p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+
+    .hero {
+        min-height: 450px;
+        padding: 40px 7%;
+    }
+
+    .contenu h1 {
+        font-size: 36px;
+    }
+
+    .contenu p {
+        font-size: 15px;
+    }
+
+    .avantages {
+        gap: 10px;
+        padding: 30px 5%;
+    }
+}
